@@ -61,6 +61,8 @@ export interface TextFieldProps
   rightContent?: TextFieldItemProps | TextFieldItemProps[]
   disableLeftWrapper?: boolean
   disableRightWrapper?: boolean
+  inputClassName?: string
+  inputInterpolation?: InjectedInterpolation
   wrapperClassName?: string
   wrapperInterpolation?: InjectedInterpolation
   leftWrapperClassName?: string
