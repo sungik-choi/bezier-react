@@ -1,5 +1,5 @@
 /* External dependencies */
-import React, { Ref, forwardRef, useCallback, useMemo, Fragment } from 'react'
+import React, { forwardRef, useCallback, useMemo, Fragment } from 'react'
 import { get, noop, isNil, isString } from 'lodash-es'
 import { v4 as uuid } from 'uuid'
 
@@ -56,8 +56,10 @@ function ListItemComponent({
   activeClassName,
   /* HTMLAttribute Props */
   onClick = noop,
-  ...othreProps
-}: ListItemProps, forwardedRef: Ref<any>) {
+  onMouseDown = noop,
+  onMouseUp = noop,
+  ...otherProps
+}: ListItemProps, forwardedRef: React.Ref<HTMLAnchorElement>) {
   const clazzName = useMemo(() => (
     mergeClassNames(className, ((active && activeClassName) || undefined))
   ), [
@@ -66,11 +68,25 @@ function ListItemComponent({
     active,
   ])
 
-  const handleClick = useCallback((e) => {
+  const handleClick = useCallback((e: React.MouseEvent) => {
     onClick(e, name)
   }, [
     name,
     onClick,
+  ])
+
+  const handleMouseDown = useCallback((e: React.MouseEvent) => {
+    onMouseDown(e, name)
+  }, [
+    name,
+    onMouseDown,
+  ])
+
+  const handleMouseUp = useCallback((e: React.MouseEvent) => {
+    onMouseUp(e, name)
+  }, [
+    name,
+    onMouseUp,
   ])
 
   const getNewLineComponenet = useCallback((desc: string) => (
@@ -208,11 +224,13 @@ function ListItemComponent({
         target="_blank"
         rel="noopener noreferrer"
         onClick={handleClick}
+        onMouseDown={handleMouseDown}
+        onMouseUp={handleMouseUp}
         active={false}
         data-active={active}
         data-option-key={optionKey}
         data-testid={testId}
-        {...othreProps}
+        {...otherProps}
       >
         { ContentComponent }
       </Wrapper>
@@ -225,11 +243,13 @@ function ListItemComponent({
       className={clazzName}
       size={size}
       onClick={handleClick}
+      onMouseDown={handleMouseDown}
+      onMouseUp={handleMouseUp}
       active={active}
       data-active={active}
       data-option-key={optionKey}
       data-testid={testId}
-      {...othreProps}
+      {...otherProps}
     >
       { ContentComponent }
     </Wrapper>

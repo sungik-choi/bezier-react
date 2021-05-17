@@ -13,6 +13,9 @@ export enum ListItemSize {
   XL = 'xl',
 }
 
+type MouseEventHandlerType<ElementType = Element> =
+  (event: React.MouseEvent<ElementType>, name?: string) => void
+
 export default interface ListItemProps extends ContentComponentProps, OptionItem, ActivableElement {
   iconClassName?: string
   contentClassName?: string
@@ -21,7 +24,9 @@ export default interface ListItemProps extends ContentComponentProps, OptionItem
   href?: string
   hide?: boolean
   nested?: boolean
-  onClick?: (e: any, name?: string) => void
+  onClick?: MouseEventHandlerType
+  onMouseDown?: MouseEventHandlerType
+  onMouseUp?: MouseEventHandlerType
   leftContent?: React.ReactNode
   leftIcon?: IconName
   leftIconColor?: SemanticNames
