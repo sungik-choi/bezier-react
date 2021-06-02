@@ -1,29 +1,42 @@
 /* External dependencies */
-import { useState, useEffect } from 'react'
+import {
+  useState,
+  useEffect,
+} from 'react'
 
 enum ImageEventType {
   Load = 'load',
   Error = 'error',
 }
 
-interface CacheImage {
+export interface CacheImage {
   src: string
   isLoaded: boolean
 }
 
-const imageCache = new Map<string, CacheImage>()
+type ImageCacheType = Map<string, CacheImage>
 
-function getInitialSource(src: string) {
+const defaultImageCache = new Map<string, CacheImage>()
+
+function getInitialSource(src: string, imageCache: ImageCacheType) {
   const cachedImage = imageCache.get(src)
   if (!cachedImage) { return null }
   return cachedImage
 }
 
-export default function useProgressiveImage(src: string, defaultSrc: string) {
-  const [source, setSource] = useState<CacheImage | null>(() => getInitialSource(src))
+export default function useProgressiveImage(
+  src: string,
+  defaultSrc: string,
+  imageCache: ImageCacheType = defaultImageCache
+) {
+  const [source, setSource] = useState<CacheImage | null>(() => getInitialSource(src, imageCache))
 
-  useEffect(() => {
+  useEffect(function updateSource() {
     if (source?.src === src) { return undefined }
+
+    if (imageCache.get(src)?.isLoaded) {
+      setSource({ src, isLoaded: true })
+    }
 
     const image = new Image()
     image.src = src
