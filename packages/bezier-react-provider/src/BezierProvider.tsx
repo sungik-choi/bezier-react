@@ -10,7 +10,7 @@ interface BezierProviderProps {
   themeVarsScope?: ThemeVarsAdditionalType['scope']
 }
 
-function BezierProvider({
+export function BezierProvider({
   foundation,
   children,
   themeVarsScope,
@@ -28,5 +28,3 @@ function BezierProvider({
     </FoundationProvider>
   )
 }
-
-export default BezierProvider

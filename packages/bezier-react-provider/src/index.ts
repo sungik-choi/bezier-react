@@ -1,1 +1,1 @@
-export { default } from './BezierProvider'
+export * from './BezierProvider'
