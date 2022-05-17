@@ -1,11 +1,9 @@
 /* External dependencies */
 import React from 'react'
 import { render as baseRender, renderHook as baseRenderHook } from '@testing-library/react'
-
-/* Internal dependencies */
-import { LightFoundation } from 'Foundation'
-import BezierProvider from 'Providers/BezierProvider'
-import { ChildrenProps } from 'Types/ComponentProps'
+import { BezierProvider } from '@channel.io/bezier-react-provider'
+import { LightFoundation } from '@channel.io/bezier-react-foundation'
+import type { ChildrenProps } from '@channel.io/bezier-react-system'
 
 function TestProviders({ children }: ChildrenProps) {
   return (
