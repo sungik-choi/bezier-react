@@ -9,7 +9,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/channel-io/bezier-react.git",
-    "directory": "packages/bezier-react-text"
+    "directory": "packages/bezier-react-components/bezier-react-text"
   },
   "license": "ISC",
   "author": "Channel Corp.",
