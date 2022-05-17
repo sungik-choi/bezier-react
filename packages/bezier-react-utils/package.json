@@ -1,0 +1,39 @@
+{
+  "name": "@channel.io/bezier-react-utils",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "https://github.com/channel-io/bezier-react#readme",
+  "bugs": {
+    "url": "https://github.com/channel-io/bezier-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/channel-io/bezier-react.git",
+    "directory": "packages/bezier-react-utils"
+  },
+  "license": "ISC",
+  "author": "Channel Corp.",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --minify --onSuccess \"tsc\"",
+    "clean": "rm -rf .turbo node_modules dist"
+  },
+  "devDependencies": {
+    "@channel.io/bezier-react-foundation": "^0.1.0",
+    "eslint-config-bezier-react": "*",
+    "react": "^18.1.0",
+    "tsconfig": "*",
+    "tsup": "^5.12.7"
+  },
+  "peerDependencies": {
+    "@channel.io/bezier-react-foundation": ">=0.1.0",
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}
