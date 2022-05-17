@@ -1,8 +1,6 @@
 /* External dependencies */
 import { omit, pick } from 'lodash-es'
-
-/* Internal dependencies */
-import { BezierComponentProps } from 'Types/ComponentProps'
+import type { BezierComponentProps } from '@channel.io/bezier-react-system'
 
 const bezierComponentPropsKeys: Array<keyof BezierComponentProps> = [
   'as',
