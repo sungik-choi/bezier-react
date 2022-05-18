@@ -14,12 +14,12 @@
     "build"
   ],
   "scripts": {
-    "build": "npm run build:icon && npm run build:rollup",
+    "build": "",
     "dev": "npm run storybook",
     "lint": "npm run eslint-all && npm run stylelint-all",
     "typecheck": "ts-prune -e -p ./tsconfig.prune.json && tsc",
     "jest": "cross-env BABEL_ENV=test jest --maxWorkers=2",
-    "test": "npm run lint && npm run typecheck && npm run jest",
+    "test": "",
     "release": "npm run semantic-release",
     "clean": "rm -rf node_modules .turbo",
     "storybook": "start-storybook -p 4101",

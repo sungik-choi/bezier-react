@@ -23,7 +23,8 @@
   ],
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --minify --onSuccess \"tsc\"",
-    "clean": "rm -rf .turbo node_modules dist"
+    "clean": "rm -rf .turbo node_modules dist",
+    "test": "jest"
   },
   "devDependencies": {
     "@channel.io/bezier-react-foundation": "^0.1.0",

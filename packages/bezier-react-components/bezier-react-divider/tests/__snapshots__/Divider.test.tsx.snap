@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider > Snapshot > 1`] = `
+<hr
+  aria-orientation="horizontal"
+  class="sc-bczRLJ hmkIeM sc-gsnTZi cfSUQN"
+  data-testid="bezier-react-divider"
+/>
+`;
