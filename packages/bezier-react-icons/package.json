@@ -1,0 +1,22 @@
+{
+  "name": "@channel.io/bezier-react-icons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "build": "npm run build:icon && rollup",
+    "build:icon": "./scripts/build-icon.sh",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sungik-choi/bezier-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sungik-choi/bezier-react/issues"
+  },
+  "homepage": "https://github.com/sungik-choi/bezier-react#readme"
+}
