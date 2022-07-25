@@ -8,9 +8,9 @@ on:
 
 jobs:
   chromatic-report:
+    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
     name: Chromatic Report
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
@@ -41,7 +41,7 @@ jobs:
 
       - name: Unzip artifact
         run: unzip pr.zip
-        
+
       - name: Get PR number
         uses: actions/github-script@v6
         id: pr-number
@@ -75,8 +75,8 @@ jobs:
         with:
           template: .github/comment_template.md
           vars: |
-            storybookUrl: ${{ steps.storybook-url.outputs.result }}
-            buildUrl: ${{ steps.build-url.outputs.result }}
+            storybookUrl: "${{ steps.storybook-url.outputs.result }}"
+            buildUrl: "${{ steps.build-url.outputs.result }}"
 
       - run: echo ${{ steps.template.outputs.result }}
 
