@@ -74,8 +74,8 @@ jobs:
         with:
           template: .github/comment_template.md
           vars: |
-            storybookUrl: "${{ steps.storybook-url.outputs.result }}"
-            buildUrl: "${{ steps.build-url.outputs.result }}"
+            storybookUrl: ${{ steps.storybook-url.outputs.result }}
+            buildUrl: ${{ steps.build-url.outputs.result }}
 
       - run: echo ${{ steps.template.outputs.result }}
 
