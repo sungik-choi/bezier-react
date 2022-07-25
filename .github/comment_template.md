@@ -1,4 +1,4 @@
-# Chromatic Report!
+# Chromatic Report
 
 🚀 Congratulations! Your build was successful!
 

@@ -15,6 +15,11 @@ jobs:
       github.event.workflow_run.conclusion == 'success' }}
 
     steps:
+      - run: |
+          echo ${{ github.event.workflow_run.event }}
+          echo ${{ github.event.workflow_run.event }}
+          echo ${{ github.event.workflow_run.conclusion }}
+
       - name: Checkout Repo
         uses: actions/checkout@v2
 
