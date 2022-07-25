@@ -68,6 +68,8 @@ jobs:
             return fs.readFileSync('./buildUrl');
           result-encoding: string
 
+      - run: ls
+
       - name: Render template
         id: template
         uses: chuhlomin/render-template@v1.4
