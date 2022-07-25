@@ -8,7 +8,6 @@ on:
 
 jobs:
   chromatic-report:
-    if: github.event.workflow_run.event == 'pull_request' && github.event.workflow_run.conclusion == 'success'
     name: Chromatic Report
     runs-on: ubuntu-latest
 
@@ -78,6 +77,8 @@ jobs:
           vars: |
             storybookUrl: ${{ steps.storybook-url.outputs.result }}
             buildUrl: ${{ steps.build-url.outputs.result }}
+
+      - run: echo ${{ steps.template.outputs.result }}
 
       - name: Find comment
         uses: peter-evans/find-comment@v2
