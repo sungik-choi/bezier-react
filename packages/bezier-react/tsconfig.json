@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
-    "composite": true,
     "rootDir": ".",
     "noEmit": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "build",
     "module": "esnext",
-    "target": "es6",
+    "target": "es2020",
     "lib": ["dom", "ESNext"],
     "jsx": "react",
     "moduleResolution": "node",

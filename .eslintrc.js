@@ -7,6 +7,7 @@ module.exports = {
   parserOptions: {
     tsconfigRootDir: __dirname,
     project: './tsconfig.eslint.json',
+    extraFileExtensions: ['.mjs'],
   },
   rules: {
     'no-restricted-imports': 'off',

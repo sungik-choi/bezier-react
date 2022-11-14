@@ -2,7 +2,7 @@
 // export * from './providers'
 
 // /* Foundation */
-// export * from './foundation'
+export * from './foundation'
 
 /* Components */
 export * from './components/Avatars'
@@ -28,7 +28,7 @@ export * from './components/Icon'
 export * from './components/Status'
 // export * from './components/Tabs'
 // export * from './components/TagBadge'
-export * from './components/Text'
+// export * from './components/Text'
 // export * from './components/Toast'
 // export * from './components/Tooltip'
 
