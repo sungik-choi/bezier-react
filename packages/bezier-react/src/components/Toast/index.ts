@@ -11,6 +11,8 @@ import ToastProps, {
   ToastContent,
 } from './Toast.types'
 
+export { default as useToast } from './useToast'
+
 export type {
   ToastProps,
   ToastOptions,

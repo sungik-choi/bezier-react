@@ -1,11 +1,11 @@
-/* Internal denpendencies */
-import { styled, css, smoothCorners, Foundation, SemanticNames } from 'Foundation'
-import { enableSmoothCorners } from 'Worklets/EnableCSSHoudini'
-import type { InjectedInterpolation, InterpolationProps } from 'Types/Foundation'
-import { Icon, CheckIcon as CheckIconSource } from 'Components/Icon'
-import { AVATAR_BORDER_RADIUS_PERCENTAGE } from 'Components/Avatars/AvatarStyle'
-import { AvatarSize } from 'Components/Avatars/Avatar'
-import { AvatarImage } from 'Components/Avatars/Avatar/Avatar.styled'
+/* Internal dependencies */
+import { styled, css, smoothCorners, Foundation, SemanticNames } from '../../../foundation'
+import { enableSmoothCorners } from '../../../worklets/EnableCSSHoudini'
+import type { InjectedInterpolation, InterpolationProps } from '../../../types/Foundation'
+import { Icon, CheckIcon as CheckIconSource } from '../../Icon'
+import { AVATAR_BORDER_RADIUS_PERCENTAGE } from '../AvatarStyle'
+import { AvatarImage } from '../Avatar/Avatar.styled'
+import { AvatarSize } from '../Avatar'
 
 interface CheckableAvatarWrapperProps extends InterpolationProps {
   isChecked: boolean

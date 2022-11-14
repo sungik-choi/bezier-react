@@ -1,9 +1,9 @@
-/* Internal denpendencies */
-import { styled, smoothCorners, css } from 'Foundation'
-import { InterpolationProps } from 'Types/Foundation'
-import { AVATAR_BORDER_RADIUS_PERCENTAGE, AVATAR_GROUP_DEFAULT_SPACING } from 'Components/Avatars/AvatarStyle'
-import { Text, TextProps } from 'Components/Text'
-import { AvatarSize } from 'Components/Avatars/Avatar'
+/* Internal dependencies */
+import { styled, smoothCorners, css } from '../../../foundation'
+import { InterpolationProps } from '../../../types/Foundation'
+import { AVATAR_BORDER_RADIUS_PERCENTAGE, AVATAR_GROUP_DEFAULT_SPACING } from '../AvatarStyle'
+import { Text, TextProps } from '../../Text'
+import { AvatarSize } from '../Avatar'
 
 interface AvatarSizeProps {
   size: AvatarSize

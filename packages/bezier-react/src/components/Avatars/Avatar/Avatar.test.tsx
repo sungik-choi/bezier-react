@@ -2,10 +2,10 @@
 import React from 'react'
 
 /* Internal dependencies */
-import { render } from 'Utils/testUtils'
-import DisabledOpacity from 'Constants/DisabledOpacity'
-import { StatusType } from 'Components/Status'
-import { AVATAR_BORDER_RADIUS_PERCENTAGE } from 'Components/Avatars/AvatarStyle'
+import { render } from '../../../utils/testUtils'
+import DisabledOpacity from '../../../constants/DisabledOpacity'
+import { StatusType } from '../../Status'
+import { AVATAR_BORDER_RADIUS_PERCENTAGE } from '../AvatarStyle'
 import Avatar, { AVATAR_TEST_ID, AVATAR_WRAPPER_TEST_ID, STATUS_WRAPPER_TEST_ID } from './Avatar'
 import AvatarProps, { AvatarSize } from './Avatar.types'
 

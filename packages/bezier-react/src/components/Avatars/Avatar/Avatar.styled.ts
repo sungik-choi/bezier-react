@@ -1,9 +1,9 @@
-/* Internal denpendencies */
-import { styled, css, smoothCorners } from 'Foundation'
-import { enableSmoothCorners } from 'Worklets/EnableCSSHoudini'
-import type { InterpolationProps } from 'Types/Foundation'
-import DisabledOpacity from 'Constants/DisabledOpacity'
-import { AVATAR_BORDER_WIDTH, AVATAR_BORDER_RADIUS_PERCENTAGE } from 'Components/Avatars/AvatarStyle'
+/* Internal dependencies */
+import { styled, css, smoothCorners } from '../../../foundation'
+import { enableSmoothCorners } from '../../../worklets/EnableCSSHoudini'
+import type { InterpolationProps } from '../../../types/Foundation'
+import DisabledOpacity from '../../../constants/DisabledOpacity'
+import { AVATAR_BORDER_WIDTH, AVATAR_BORDER_RADIUS_PERCENTAGE } from '../AvatarStyle'
 import { AvatarSize } from './Avatar.types'
 
 interface AvatarWrapperProps extends InterpolationProps {

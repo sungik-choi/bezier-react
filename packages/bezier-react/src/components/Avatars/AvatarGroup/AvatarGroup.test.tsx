@@ -2,8 +2,8 @@
 import React from 'react'
 
 /* Internal dependencies */
-import { render } from 'Utils/testUtils'
-import { Avatar } from 'Components/Avatars/Avatar'
+import { render } from '../../../utils/testUtils'
+import { Avatar } from '../Avatar'
 import MOCK_AVATAR_LIST from './__mocks__/avatarList'
 import AvatarGroup, { AVATAR_GROUP_TEST_ID } from './AvatarGroup'
 import { AvatarGroupEllipsisType } from './AvatarGroup.types'

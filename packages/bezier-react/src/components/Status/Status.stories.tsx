@@ -4,8 +4,8 @@ import { base } from 'paths.macro'
 import { Story, Meta } from '@storybook/react'
 
 /* Internal dependencies */
-import { styled } from 'Foundation'
-import { getTitle } from 'Utils/storyUtils'
+import { styled } from '../../foundation'
+import { getTitle } from '../../utils/storyUtils'
 import { StatusProps, StatusSize, StatusType } from './Status.types'
 import Status from './Status'
 

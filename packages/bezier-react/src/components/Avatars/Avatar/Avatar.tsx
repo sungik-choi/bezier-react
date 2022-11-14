@@ -2,10 +2,9 @@
 import React, { forwardRef, useMemo } from 'react'
 import { noop, isEmpty } from 'lodash-es'
 
-/* Internal denpendencies */
-import { backgroundImageVariable } from 'Foundation'
-import { Status, StatusSize } from 'Components/Status'
-// eslint-disable-next-line no-restricted-imports
+/* Internal dependencies */
+import { backgroundImageVariable } from '../../../foundation'
+import { Status, StatusSize } from '../../Status'
 import defaultAvatarUrl from '../assets/defaultAvatar.svg'
 import useProgressiveImage from './useProgressiveImage'
 import AvatarProps, { AvatarSize } from './Avatar.types'

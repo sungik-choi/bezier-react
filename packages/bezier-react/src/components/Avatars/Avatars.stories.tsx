@@ -10,34 +10,34 @@ import {
 import base from 'paths.macro'
 
 /* Internal dependencies */
-import { styled } from 'Foundation'
-import { getTitle } from 'Utils/storyUtils'
-import {
-  Avatar,
-  AvatarSize,
-} from 'Components/Avatars/Avatar'
-import {
-  AvatarGroup,
-  AvatarGroupEllipsisType,
-} from 'Components/Avatars/AvatarGroup'
-import {
-  CheckableAvatar,
-} from 'Components/Avatars/CheckableAvatar'
+import { styled } from '../../foundation'
+import { getTitle } from '../../utils/storyUtils'
 import {
   Emoji,
   EmojiSize,
-} from 'Components/Emoji'
+} from '../Emoji'
 import {
   HStack,
   StackItem,
   VStack,
-} from 'Components/Stack'
+} from '../Stack'
 import {
   StatusType,
-} from 'Components/Status'
+} from '../Status'
 import {
   Text,
-} from 'Components/Text'
+} from '../Text'
+import {
+  CheckableAvatar,
+} from './CheckableAvatar'
+import {
+  AvatarGroup,
+  AvatarGroupEllipsisType,
+} from './AvatarGroup'
+import {
+  Avatar,
+  AvatarSize,
+} from './Avatar'
 import mdx from './Avatars.mdx'
 
 export default {

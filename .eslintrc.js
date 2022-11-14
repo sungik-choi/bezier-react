@@ -9,6 +9,7 @@ module.exports = {
     project: './tsconfig.eslint.json',
   },
   rules: {
+    'no-restricted-imports': 'off',
     'max-classes-per-file': 'off',
     'react/jsx-props-no-spreading': 'off',
     'react/no-array-index-key': 'warn',

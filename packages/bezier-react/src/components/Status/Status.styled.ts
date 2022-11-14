@@ -1,6 +1,6 @@
 /* Internal dependencies */
-import { styled, absoluteCenter, SemanticNames } from 'Foundation'
-import { Icon as BaseIcon } from 'Components/Icon'
+import { styled, absoluteCenter, SemanticNames } from '../../foundation'
+import { Icon as BaseIcon } from '../Icon'
 import { StatusSize } from './Status.types'
 
 function getStatusCircleBorderSize(size: StatusSize) {

@@ -4,8 +4,8 @@ import { base } from 'paths.macro'
 import { Story, Meta } from '@storybook/react'
 
 /* Internal dependencies */
-import { getTitle } from 'Utils/storyUtils'
-import { Avatar, AvatarSize } from 'Components/Avatars/Avatar'
+import { Avatar, AvatarSize } from '../Avatar'
+import { getTitle } from '../../../utils/storyUtils'
 import MOCK_AVATAR_LIST from './__mocks__/avatarList'
 import AvatarGroupProps, { AvatarGroupEllipsisType } from './AvatarGroup.types'
 import AvatarGroup from './AvatarGroup'

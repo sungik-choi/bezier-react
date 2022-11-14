@@ -1,6 +1,6 @@
 /* Internal dependencies */
-import type { AdditionalStylableProps, AdditionalColorProps } from 'Types/ComponentProps'
-import type { AvatarProps } from 'Components/Avatars/Avatar'
+import type { AdditionalStylableProps, AdditionalColorProps } from '../../../types/ComponentProps'
+import type { AvatarProps } from '../Avatar'
 
 interface CheckableAvatarPropsOptions {
   isChecked?: boolean

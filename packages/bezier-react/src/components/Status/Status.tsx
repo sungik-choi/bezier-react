@@ -2,8 +2,8 @@
 import React, { memo } from 'react'
 
 /* Internal dependencies */
-import type { SemanticNames } from 'Foundation'
-import { IconSize, LockIcon, MoonFilledIcon } from 'Components/Icon'
+import type { SemanticNames } from '../../foundation'
+import { IconSize, LockIcon, MoonFilledIcon } from '../Icon'
 import { StatusProps, StatusSize, StatusType } from './Status.types'
 import { Icon, StatusCircle } from './Status.styled'
 

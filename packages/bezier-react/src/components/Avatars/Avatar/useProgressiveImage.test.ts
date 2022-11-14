@@ -1,5 +1,5 @@
 /* Internal dependencies */
-import { renderHook } from 'Utils/testUtils'
+import { renderHook } from '../../../utils/testUtils'
 import useProgressiveImage, { CachedImage } from './useProgressiveImage'
 
 describe('useProgressiveImage >', () => {

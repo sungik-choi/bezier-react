@@ -13,22 +13,22 @@ import {
   type SemanticNames,
   styled,
   Typography,
-} from 'Foundation'
-import { getObjectFromEnum, getTitle, iconList } from 'Utils/storyUtils'
+} from '../../foundation'
+import { getObjectFromEnum, getTitle, iconList } from '../../utils/storyUtils'
 import {
   ListItem,
-} from 'Components/ListItem'
+} from '../ListItem'
 import {
   HStack,
   StackItem,
   VStack,
-} from 'Components/Stack'
+} from '../Stack'
 import {
   Select,
-} from 'Components/Forms/Inputs/Select'
+} from '../Forms/Inputs/Select'
 import {
   Text,
-} from 'Components/Text'
+} from '../Text'
 import icons, {
   ArrowLeftIcon,
   BookmarkFilledIcon,
