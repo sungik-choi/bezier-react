@@ -1,37 +1,81 @@
-/* eslint-disable no-restricted-imports */
 /* External dependencies */
-import React, { forwardRef, useMemo } from 'react'
+import React, { useCallback, useMemo, forwardRef } from 'react'
+import * as DialogPrimitive from '@radix-ui/react-dialog'
+import { noop, isNumber } from 'lodash-es'
 
 /* Internal dependencies */
-import { BaseModal } from '../BaseModal'
-import type { ModalContextValue, ModalProps } from './Modal.types'
+import { getRootElement } from 'Utils/domUtils'
 import ModalContext from './ModalContext'
+import { ModalProps, ModalContextValue } from './Modal.types'
+import * as Styled from './Modal.styled'
 
-function Modal(
-  {
-    children,
-    targetElement,
+export const Modal = forwardRef(function Modal({
+  children,
+  style,
+  show,
+  showCloseIcon = false,
+  width = 'max-content',
+  zIndex = 'auto',
+  targetElement = getRootElement(),
+  onShow = noop,
+  onHide,
+  ...rest
+}: ModalProps, forwardedRef: React.Ref<HTMLDivElement>) {
+  const contentStyle = useMemo((): React.CSSProperties & {
+    '--width': ModalProps['width']
+    '--z-index': ModalProps['zIndex']
+  } => ({
+    ...style,
+    '--width': isNumber(width) ? `${width}px` : width,
+    '--z-index': zIndex,
+  }), [
+    style,
+    width,
+    zIndex,
+  ])
+
+  const onOpenChange = useCallback<NonNullable<DialogPrimitive.DialogProps['onOpenChange']>>((open) => {
+    const callback = open ? onShow : onHide
+    callback()
+  }, [
+    onShow,
     onHide,
-    ...rests
-  }: ModalProps,
-  forwardedRef: React.Ref<HTMLDivElement>,
-) {
-  const contextValue = useMemo<ModalContextValue>(() => ({
-    onHide,
-  }), [onHide])
+  ])
+
+  const contextValue = useMemo((): ModalContextValue => ({
+    showCloseIcon,
+  }), [showCloseIcon])
 
   return (
-    <BaseModal
-      {...rests}
-      ref={forwardedRef}
-      onHide={onHide}
-      targetElement={targetElement}
+    <DialogPrimitive.Root
+      open={show}
+      onOpenChange={onOpenChange}
     >
-      <ModalContext.Provider value={contextValue}>
-        { children }
-      </ModalContext.Provider>
-    </BaseModal>
-  )
-}
+      <DialogPrimitive.Portal container={targetElement}>
+        <Styled.DialogPrimitiveOverlay />
+        <DialogPrimitive.Content asChild>
+          <Styled.Content
+            ref={forwardedRef}
+            style={contentStyle}
+            {...rest}
+          >
+            <ModalContext.Provider value={contextValue}>
+              <Styled.ContentAndActionContainer>
+                { children }
 
-export default forwardRef(Modal)
+                { /** NOTE: To prevent focusing first on the close button when opening the modal,
+                place the close button behind. */ }
+                { showCloseIcon && (
+                  <DialogPrimitive.Close asChild>
+                    <Styled.CloseIconButton />
+                  </DialogPrimitive.Close>
+                ) }
+              </Styled.ContentAndActionContainer>
+            </ModalContext.Provider>
+          </Styled.Content>
+        </DialogPrimitive.Content>
+      </DialogPrimitive.Portal>
+    </DialogPrimitive.Root>
+  )
+})
+

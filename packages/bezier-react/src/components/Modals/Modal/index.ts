@@ -1,23 +1,10 @@
-import Modal from './Modal'
-import ModalContent from './ModalContent'
-import ModalAction from './ModalAction'
-import {
+export { Modal } from './Modal'
+export { ModalContent } from './ModalContent'
+export { ModalAction } from './ModalAction'
+
+export {
   ModalTitleSize,
   type ModalProps,
-  type ModalActionProps,
   type ModalContentProps,
-  type ModalContextValue,
+  type ModalActionProps,
 } from './Modal.types'
-
-export type {
-  ModalProps,
-  ModalActionProps,
-  ModalContentProps,
-  ModalContextValue,
-}
-export {
-  Modal,
-  ModalContent,
-  ModalAction,
-  ModalTitleSize,
-}

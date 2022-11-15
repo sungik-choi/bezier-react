@@ -1,31 +1,21 @@
 /* External dependencies */
-import React, {
-  forwardRef,
-} from 'react'
+import React, { forwardRef } from 'react'
 
 /* Internal dependencies */
-import type { ModalActionProps } from './Modal.types'
+import { ModalActionProps } from './Modal.types'
 import * as Styled from './Modal.styled'
 
-const ModalAction = (
-  {
-    className,
-    leftContent,
-    rightContent,
-    ...rests
-  }: ModalActionProps,
-  forwardedRef: React.Ref<HTMLDivElement>,
-) => {
-  if (!leftContent && !rightContent) {
-    return null
-  }
+export const ModalAction = forwardRef(function ModalAction({
+  leftContent,
+  rightContent,
+  ...rest
+}: ModalActionProps, forwardedRef: React.Ref<HTMLDivElement>) {
+  if (!leftContent && !rightContent) { return null }
 
   return (
-    <Styled.Action
-      data-testid="Modal__Action"
-      {...rests}
+    <Styled.ActionContainer
       ref={forwardedRef}
-      className={className}
+      {...rest}
     >
       <div>
         { leftContent }
@@ -33,8 +23,6 @@ const ModalAction = (
       <div>
         { rightContent }
       </div>
-    </Styled.Action>
+    </Styled.ActionContainer>
   )
-}
-
-export default forwardRef(ModalAction)
+})
