@@ -40,7 +40,7 @@ export const Content = styled.section`
   width: var(--width);
   min-width: 360px;
   max-width: 100vw;
-  height: fit-content;
+  height: var(--height);
   max-height: calc(100vh - 80px);
   padding: 24px;
   overflow-y: auto;

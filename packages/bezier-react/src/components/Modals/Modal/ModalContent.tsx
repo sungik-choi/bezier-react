@@ -13,19 +13,23 @@ export const ModalContent = forwardRef(function ModalContent({
   style,
   showCloseIcon = false,
   width = 'max-content',
+  height = 'fit-content',
   zIndex = 'auto',
   ...rest
 }: ModalContentProps, forwardedRef: React.Ref<HTMLDivElement>) {
   const contentStyle = useMemo((): React.CSSProperties & {
     '--width': ModalContentProps['width']
+    '--height': ModalContentProps['height']
     '--z-index': ModalContentProps['zIndex']
   } => ({
     ...style,
     '--width': isNumber(width) ? `${width}px` : width,
+    '--height': isNumber(height) ? `${height}px` : height,
     '--z-index': zIndex,
   }), [
     style,
     width,
+    height,
     zIndex,
   ])
 

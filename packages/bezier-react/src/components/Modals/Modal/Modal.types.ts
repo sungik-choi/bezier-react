@@ -44,6 +44,12 @@ interface ModalContentOptions {
   width?: React.CSSProperties['width']
 
   /**
+   * Height of the modal.
+   * @default 'fit-content'
+   */
+  height?: React.CSSProperties['height']
+
+  /**
    * z-index of the modal content.
    * Rather than using this option, Please check modal is positioned in the proper stacking context.
    * @deprecated
