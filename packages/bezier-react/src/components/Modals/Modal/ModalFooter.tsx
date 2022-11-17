@@ -2,18 +2,18 @@
 import React, { forwardRef } from 'react'
 
 /* Internal dependencies */
-import { ModalActionProps } from './Modal.types'
+import { ModalFooterProps } from './Modal.types'
 import * as Styled from './Modal.styled'
 
-export const ModalAction = forwardRef(function ModalAction({
+export const ModalFooter = forwardRef(function ModalFooter({
   leftContent,
   rightContent,
   ...rest
-}: ModalActionProps, forwardedRef: React.Ref<HTMLDivElement>) {
+}: ModalFooterProps, forwardedRef: React.Ref<HTMLDivElement>) {
   if (!leftContent && !rightContent) { return null }
 
   return (
-    <Styled.ActionContainer
+    <Styled.FooterContainer
       ref={forwardedRef}
       {...rest}
     >
@@ -23,6 +23,6 @@ export const ModalAction = forwardRef(function ModalAction({
       <div>
         { rightContent }
       </div>
-    </Styled.ActionContainer>
+    </Styled.FooterContainer>
   )
 })

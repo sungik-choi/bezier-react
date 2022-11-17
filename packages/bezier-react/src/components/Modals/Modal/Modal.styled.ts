@@ -122,7 +122,7 @@ export const CloseIconButtonSpacer = styled(Button).attrs({
   visibility: hidden;
 `
 
-export const ActionContainer = styled.footer`
+export const FooterContainer = styled.footer`
   display: flex;
   justify-content: space-between;
 `

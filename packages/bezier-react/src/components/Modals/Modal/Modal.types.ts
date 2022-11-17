@@ -13,26 +13,6 @@ interface ModalOptions {
   show: boolean
 
   /**
-   * Show close icon button that closes the modal when clicked.
-   * @default false
-   */
-  showCloseIcon?: boolean
-
-  /**
-   * Width of the modal.
-   * @default 'max-content'
-   */
-  width?: React.CSSProperties['width']
-
-  /**
-   * z-index of the modal content.
-   * Rather than using this option, Please check modal is positioned in the proper stacking context.
-   * @deprecated
-   * @default 'auto'
-   */
-  zIndex?: React.CSSProperties['zIndex']
-
-  /**
    * Specify a container element to portal the content into.
    * @default getRootElement()
    */
@@ -51,6 +31,28 @@ interface ModalOptions {
 }
 
 interface ModalContentOptions {
+  /**
+   * Show close icon button that closes the modal when clicked.
+   * @default false
+   */
+  showCloseIcon?: boolean
+
+  /**
+   * Width of the modal.
+   * @default 'max-content'
+   */
+  width?: React.CSSProperties['width']
+
+  /**
+   * z-index of the modal content.
+   * Rather than using this option, Please check modal is positioned in the proper stacking context.
+   * @deprecated
+   * @default 'auto'
+   */
+  zIndex?: React.CSSProperties['zIndex']
+}
+
+interface ModalHeaderOptions {
   /**
    * An accessible title to be announced when the modal is opened.
    */
@@ -73,10 +75,10 @@ interface ModalContentOptions {
   titleSize?: ModalTitleSize
 }
 
-type ModalActionSideContent = React.ReactNode
+type ModalFooterSideContent = React.ReactNode
 
-interface ModalActionOptions extends
-  SideContentProps<ModalActionSideContent, ModalActionSideContent> {}
+interface ModalFooterOptions extends
+  SideContentProps<ModalFooterSideContent, ModalFooterSideContent> {}
 
 export interface ModalProps extends
   BezierComponentProps,
@@ -87,12 +89,18 @@ export interface ModalProps extends
 export interface ModalContentProps extends
   BezierComponentProps,
   ChildrenProps,
-  Omit<React.HTMLAttributes<HTMLDivElement>, keyof ModalContentOptions>,
+  React.HTMLAttributes<HTMLDivElement>,
   ModalContentOptions {}
 
-export interface ModalActionProps extends
+export interface ModalHeaderProps extends
   BezierComponentProps,
-  ModalActionOptions {}
+  Omit<React.HTMLAttributes<HTMLDivElement>, keyof ModalHeaderOptions>,
+  ModalHeaderOptions {}
 
-export interface ModalContextValue extends
-  NonNullable<Pick<ModalOptions, 'showCloseIcon'>> {}
+export interface ModalFooterProps extends
+  BezierComponentProps,
+  React.HTMLAttributes<HTMLDivElement>,
+  ModalFooterOptions {}
+
+export interface ModalContentContextValue extends
+  NonNullable<Pick<ModalContentOptions, 'showCloseIcon'>> {}

@@ -1,10 +1,12 @@
 export { Modal } from './Modal'
 export { ModalContent } from './ModalContent'
-export { ModalAction } from './ModalAction'
+export { ModalHeader } from './ModalHeader'
+export { ModalFooter } from './ModalFooter'
 
 export {
   ModalTitleSize,
   type ModalProps,
   type ModalContentProps,
-  type ModalActionProps,
+  type ModalHeaderProps,
+  type ModalFooterProps,
 } from './Modal.types'
