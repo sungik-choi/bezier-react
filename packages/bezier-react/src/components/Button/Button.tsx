@@ -102,6 +102,7 @@ function Button(
     onMouseEnter = noop,
     onMouseLeave = noop,
     onBlur = noop,
+    ...rest
   }: ButtonProps,
   forwardedRef: React.Ref<HTMLElement>,
 ) {
@@ -227,6 +228,7 @@ function Button(
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       onBlur={onBlur}
+      {...rest}
     >
       <Styled.ButtonContents
         data-testid={BUTTON_INNER_CONTENT_TEST_ID}
