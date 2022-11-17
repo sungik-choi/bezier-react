@@ -13,7 +13,7 @@ import { Modal } from './Modal'
 import { ModalContent } from './ModalContent'
 import { ModalHeader } from './ModalHeader'
 import { ModalFooter } from './ModalFooter'
-import { ModalTrigger } from './ModalTrigger'
+import { ModalTrigger, ModalClose } from './ModalHelpers'
 import { ModalProps, ModalContentProps, ModalHeaderProps, ModalTitleSize } from './Modal.types'
 
 export default {
@@ -24,6 +24,7 @@ export default {
     ModalHeader,
     ModalFooter,
     ModalTrigger,
+    ModalClose,
   },
   argTypes: {
     width: {
@@ -89,18 +90,20 @@ const Template: Story<ModalProps & ModalContentProps & ModalHeaderProps> = ({
         <ModalFooter
           rightContent={(
             <ButtonGroup>
-              <Button
-                colorVariant={ButtonColorVariant.MonochromeLight}
-                styleVariant={ButtonStyleVariant.Secondary}
-                text="Cancel"
-                onClick={() => setShow(false)}
-              />
-              <Button
-                colorVariant={ButtonColorVariant.Blue}
-                styleVariant={ButtonStyleVariant.Primary}
-                text="Save"
-                onClick={() => setShow(false)}
-              />
+              <ModalClose>
+                <Button
+                  colorVariant={ButtonColorVariant.MonochromeLight}
+                  styleVariant={ButtonStyleVariant.Secondary}
+                  text="Cancel"
+                />
+              </ModalClose>
+              <ModalClose>
+                <Button
+                  colorVariant={ButtonColorVariant.Blue}
+                  styleVariant={ButtonStyleVariant.Primary}
+                  text="Save"
+                />
+              </ModalClose>
             </ButtonGroup>
           )}
         />

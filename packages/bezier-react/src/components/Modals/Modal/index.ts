@@ -2,7 +2,7 @@ export { Modal } from './Modal'
 export { ModalContent } from './ModalContent'
 export { ModalHeader } from './ModalHeader'
 export { ModalFooter } from './ModalFooter'
-export { ModalTrigger } from './ModalTrigger'
+export { ModalTrigger, ModalClose } from './ModalHelpers'
 
 export {
   ModalTitleSize,
@@ -11,4 +11,5 @@ export {
   type ModalHeaderProps,
   type ModalFooterProps,
   type ModalTriggerProps,
+  type ModalCloseProps,
 } from './Modal.types'

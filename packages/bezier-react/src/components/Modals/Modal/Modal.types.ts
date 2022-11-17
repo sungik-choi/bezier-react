@@ -111,5 +111,8 @@ export interface ModalFooterProps extends
 export interface ModalTriggerProps extends
   ChildrenProps {}
 
+export interface ModalCloseProps extends
+  ChildrenProps {}
+
 export interface ModalContentContextValue extends
   NonNullable<Pick<ModalContentOptions, 'showCloseIcon'>> {}
