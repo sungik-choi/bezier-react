@@ -14,39 +14,16 @@ import { ModalContent } from './ModalContent'
 import { ModalHeader } from './ModalHeader'
 import { ModalFooter } from './ModalFooter'
 import { ModalTrigger, ModalClose } from './ModalHelpers'
-import { ModalProps, ModalContentProps, ModalHeaderProps, ModalTitleSize } from './Modal.types'
+import {
+  ModalProps,
+  ModalContentProps,
+  ModalHeaderProps,
+  ModalTitleSize,
+} from './Modal.types'
 
-export default {
-  title: getTitle(base),
-  component: Modal,
-  subcomponents: {
-    ModalContent,
-    ModalHeader,
-    ModalFooter,
-    ModalTrigger,
-    ModalClose,
-  },
-  argTypes: {
-    width: {
-      control: {
-        type: 'text',
-      },
-    },
-    zIndex: {
-      control: {
-        type: 'text',
-      },
-    },
-    titleSize: {
-      control: {
-        type: 'radio',
-        options: getObjectFromEnum(ModalTitleSize),
-      },
-    },
-  },
-} as Meta<ModalProps>
+type ModalCompositionProps = ModalProps & ModalContentProps & ModalHeaderProps
 
-const Template: Story<ModalProps & ModalContentProps & ModalHeaderProps> = ({
+function ModalComposition({
   show: showProp,
   showCloseIcon,
   width,
@@ -54,7 +31,8 @@ const Template: Story<ModalProps & ModalContentProps & ModalHeaderProps> = ({
   subTitle,
   description,
   titleSize,
-}) => {
+  // TODO: Add all props
+}: ModalCompositionProps) {
   const [show, setShow] = useState(false)
 
   useEffect(function watchShowToChange() {
@@ -112,8 +90,41 @@ const Template: Story<ModalProps & ModalContentProps & ModalHeaderProps> = ({
   )
 }
 
-export const Composite = Template.bind({})
-Composite.args = {
+export default {
+  title: getTitle(base),
+  component: ModalComposition,
+  subcomponents: {
+    Modal,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalTrigger,
+    ModalClose,
+  },
+  argTypes: {
+    width: {
+      control: {
+        type: 'text',
+      },
+    },
+    zIndex: {
+      control: {
+        type: 'text',
+      },
+    },
+    titleSize: {
+      control: {
+        type: 'radio',
+        options: getObjectFromEnum(ModalTitleSize),
+      },
+    },
+  },
+} as Meta<ModalProps>
+
+const Template: Story<ModalCompositionProps> = ModalComposition
+
+export const Composition = Template.bind({})
+Composition.args = {
   show: false,
   showCloseIcon: false,
   title: 'Edit profile',
