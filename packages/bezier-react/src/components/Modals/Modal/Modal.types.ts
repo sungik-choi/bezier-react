@@ -13,12 +13,6 @@ interface ModalOptions {
   show: boolean
 
   /**
-   * Specify a container element to portal the content into.
-   * @default getRootElement()
-   */
-  targetElement?: HTMLElement | null
-
-  /**
    * Callback function to be called when the modal is opened.
    * @default noop
    */
@@ -31,6 +25,12 @@ interface ModalOptions {
 }
 
 interface ModalContentOptions {
+  /**
+   * Specify a container element to portal the content into.
+   * @default getRootElement()
+   */
+  targetElement?: HTMLElement | null
+
   /**
    * Show close icon button that closes the modal when clicked.
    * @default false
@@ -107,6 +107,9 @@ export interface ModalFooterProps extends
   BezierComponentProps,
   React.HTMLAttributes<HTMLDivElement>,
   ModalFooterOptions {}
+
+export interface ModalTriggerProps extends
+  ChildrenProps {}
 
 export interface ModalContentContextValue extends
   NonNullable<Pick<ModalContentOptions, 'showCloseIcon'>> {}

@@ -4,13 +4,11 @@ import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { noop } from 'lodash-es'
 
 /* Internal dependencies */
-import { getRootElement } from 'Utils/domUtils'
 import { ModalProps } from './Modal.types'
 
 export function Modal({
   children,
   show,
-  targetElement = getRootElement(),
   onShow = noop,
   onHide,
 }: ModalProps) {
@@ -27,9 +25,7 @@ export function Modal({
       open={show}
       onOpenChange={onOpenChange}
     >
-      <DialogPrimitive.Portal container={targetElement}>
-        { children }
-      </DialogPrimitive.Portal>
+      { children }
     </DialogPrimitive.Root>
   )
 }

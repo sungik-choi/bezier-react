@@ -4,6 +4,7 @@ import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { isNumber } from 'lodash-es'
 
 /* Internal dependencies */
+import { getRootElement } from 'Utils/domUtils'
 import ModalContentContext from './ModalContentContext'
 import { ModalContentProps, ModalContentContextValue } from './Modal.types'
 import * as Styled from './Modal.styled'
@@ -11,6 +12,7 @@ import * as Styled from './Modal.styled'
 export const ModalContent = forwardRef(function ModalContent({
   children,
   style,
+  targetElement = getRootElement(),
   showCloseIcon = false,
   width = 'max-content',
   height = 'fit-content',
@@ -38,7 +40,7 @@ export const ModalContent = forwardRef(function ModalContent({
   }), [showCloseIcon])
 
   return (
-    <ModalContentContext.Provider value={contextValue}>
+    <DialogPrimitive.Portal container={targetElement}>
       <Styled.DialogPrimitiveOverlay />
       <DialogPrimitive.Content asChild>
         <Styled.Content
@@ -47,7 +49,9 @@ export const ModalContent = forwardRef(function ModalContent({
           {...rest}
         >
           <Styled.ContentContainer>
-            { children }
+            <ModalContentContext.Provider value={contextValue}>
+              { children }
+            </ModalContentContext.Provider>
           </Styled.ContentContainer>
 
           { /** NOTE: To prevent focusing first on the close button when opening the modal,
@@ -59,6 +63,6 @@ export const ModalContent = forwardRef(function ModalContent({
           ) }
         </Styled.Content>
       </DialogPrimitive.Content>
-    </ModalContentContext.Provider>
+    </DialogPrimitive.Portal>
   )
 })

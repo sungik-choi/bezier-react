@@ -13,12 +13,18 @@ import { Modal } from './Modal'
 import { ModalContent } from './ModalContent'
 import { ModalHeader } from './ModalHeader'
 import { ModalFooter } from './ModalFooter'
+import { ModalTrigger } from './ModalTrigger'
 import { ModalProps, ModalContentProps, ModalHeaderProps, ModalTitleSize } from './Modal.types'
 
 export default {
   title: getTitle(base),
   component: Modal,
-  subcomponents: { ModalContent, ModalFooter },
+  subcomponents: {
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalTrigger,
+  },
   argTypes: {
     width: {
       control: {
@@ -55,53 +61,51 @@ const Template: Story<ModalProps & ModalContentProps & ModalHeaderProps> = ({
   }, [showProp])
 
   return (
-    <>
-      <Button
-        text="Open Modal"
-        onClick={() => setShow(true)}
-      />
+    <Modal
+      show={show}
+      onShow={() => setShow(true)}
+      onHide={() => setShow(false)}
+    >
+      <ModalTrigger>
+        <Button text="Open Modal" />
+      </ModalTrigger>
 
-      <Modal
-        show={show}
-        onHide={() => setShow(false)}
+      <ModalContent
+        showCloseIcon={showCloseIcon}
+        width={width}
       >
-        <ModalContent
-          showCloseIcon={showCloseIcon}
-          width={width}
-        >
-          <ModalHeader
-            title={title}
-            subTitle={subTitle}
-            description={description}
-            titleSize={titleSize}
-          />
+        <ModalHeader
+          title={title}
+          subTitle={subTitle}
+          description={description}
+          titleSize={titleSize}
+        />
 
-          <FormControl labelPosition="left">
-            <FormLabel>Name</FormLabel>
-            <TextField />
-          </FormControl>
+        <FormControl labelPosition="left">
+          <FormLabel>Name</FormLabel>
+          <TextField />
+        </FormControl>
 
-          <ModalFooter
-            rightContent={(
-              <ButtonGroup>
-                <Button
-                  colorVariant={ButtonColorVariant.MonochromeLight}
-                  styleVariant={ButtonStyleVariant.Secondary}
-                  text="Cancel"
-                  onClick={() => setShow(false)}
-                />
-                <Button
-                  colorVariant={ButtonColorVariant.Blue}
-                  styleVariant={ButtonStyleVariant.Primary}
-                  text="Save"
-                  onClick={() => setShow(false)}
-                />
-              </ButtonGroup>
-            )}
-          />
-        </ModalContent>
-      </Modal>
-    </>
+        <ModalFooter
+          rightContent={(
+            <ButtonGroup>
+              <Button
+                colorVariant={ButtonColorVariant.MonochromeLight}
+                styleVariant={ButtonStyleVariant.Secondary}
+                text="Cancel"
+                onClick={() => setShow(false)}
+              />
+              <Button
+                colorVariant={ButtonColorVariant.Blue}
+                styleVariant={ButtonStyleVariant.Primary}
+                text="Save"
+                onClick={() => setShow(false)}
+              />
+            </ButtonGroup>
+          )}
+        />
+      </ModalContent>
+    </Modal>
   )
 }
 
