@@ -13,7 +13,7 @@ export const ModalFooter = forwardRef(function ModalFooter({
   if (!leftContent && !rightContent) { return null }
 
   return (
-    <Styled.FooterContainer
+    <Styled.Footer
       ref={forwardedRef}
       {...rest}
     >
@@ -23,6 +23,6 @@ export const ModalFooter = forwardRef(function ModalFooter({
       <div>
         { rightContent }
       </div>
-    </Styled.FooterContainer>
+    </Styled.Footer>
   )
 })

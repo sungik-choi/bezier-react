@@ -31,9 +31,6 @@ export const ModalHeader = forwardRef(function ModalHeader({
 
   const hasTitleOrSubtitle = title || subTitle
   const hasTitleArea = hasTitleOrSubtitle || showCloseIcon
-  const hasHeader = hasTitleArea || description
-
-  if (!hasHeader) { return null }
 
   return (
     <Styled.Header
