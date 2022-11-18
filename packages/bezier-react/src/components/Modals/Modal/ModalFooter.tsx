@@ -10,19 +10,22 @@ export const ModalFooter = forwardRef(function ModalFooter({
   rightContent,
   ...rest
 }: ModalFooterProps, forwardedRef: React.Ref<HTMLDivElement>) {
-  if (!leftContent && !rightContent) { return null }
-
   return (
     <Styled.Footer
       ref={forwardedRef}
       {...rest}
     >
-      <div>
-        { leftContent }
-      </div>
-      <div>
-        { rightContent }
-      </div>
+      { leftContent && (
+        <Styled.FooterLeftContent>
+          { leftContent }
+        </Styled.FooterLeftContent>
+      ) }
+
+      { rightContent && (
+        <Styled.FooterRightContent>
+          { rightContent }
+        </Styled.FooterRightContent>
+      ) }
     </Styled.Footer>
   )
 })

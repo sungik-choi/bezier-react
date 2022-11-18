@@ -10,7 +10,7 @@ interface ModalOptions {
   /**
    * Whether the modal should be shown or not.
    */
-  show: boolean
+  show?: boolean
 
   /**
    * Callback function to be called when the modal is opened.
@@ -20,8 +20,9 @@ interface ModalOptions {
 
   /**
    * Callback function to be called when the modal is closed.
+   * @default noop
    */
-  onHide: () => void
+  onHide?: () => void
 }
 
 interface ModalContentOptions {
@@ -29,7 +30,7 @@ interface ModalContentOptions {
    * Specify a container element to portal the content into.
    * @default getRootElement()
    */
-  targetElement?: HTMLElement | null
+  container?: HTMLElement | null
 
   /**
    * Show close icon button that closes the modal when clicked.
@@ -52,8 +53,7 @@ interface ModalContentOptions {
   /**
    * z-index of the modal content.
    * Rather than using this option, Please check modal is positioned in the proper stacking context.
-   * @deprecated
-   * @default 'auto'
+   * @default 1e7
    */
   zIndex?: React.CSSProperties['zIndex']
 }
@@ -102,6 +102,9 @@ export interface ModalHeaderProps extends
   BezierComponentProps,
   Omit<React.HTMLAttributes<HTMLDivElement>, keyof ModalHeaderOptions>,
   ModalHeaderOptions {}
+
+export interface ModalBodyProps extends
+  ChildrenProps {}
 
 export interface ModalFooterProps extends
   BezierComponentProps,

@@ -12,11 +12,11 @@ import * as Styled from './Modal.styled'
 export const ModalContent = forwardRef(function ModalContent({
   children,
   style,
-  targetElement = getRootElement(),
+  container = getRootElement(),
   showCloseIcon = false,
   width = 'max-content',
   height = 'fit-content',
-  zIndex = 'auto',
+  zIndex = 1e7,
   ...rest
 }: ModalContentProps, forwardedRef: React.Ref<HTMLDivElement>) {
   const contentStyle = useMemo((): React.CSSProperties & {
@@ -40,7 +40,7 @@ export const ModalContent = forwardRef(function ModalContent({
   }), [showCloseIcon])
 
   return (
-    <DialogPrimitive.Portal container={targetElement}>
+    <DialogPrimitive.Portal container={container}>
       <Styled.DialogPrimitiveOverlay />
       <DialogPrimitive.Content asChild>
         <Styled.Content
@@ -48,19 +48,18 @@ export const ModalContent = forwardRef(function ModalContent({
           style={contentStyle}
           {...rest}
         >
-          <Styled.ContentContainer>
+          <Styled.Section>
             <ModalContentContext.Provider value={contextValue}>
               { children }
             </ModalContentContext.Provider>
-          </Styled.ContentContainer>
 
-          { /** NOTE: To prevent focusing first on the close button when opening the modal,
-          place the close button behind. */ }
-          { showCloseIcon && (
-            <DialogPrimitive.Close asChild>
-              <Styled.CloseIconButton />
-            </DialogPrimitive.Close>
-          ) }
+            { /* NOTE: To prevent focusing first on the close button when opening the modal, place the close button behind. */ }
+            { showCloseIcon && (
+              <DialogPrimitive.Close asChild>
+                <Styled.CloseIconButton />
+              </DialogPrimitive.Close>
+            ) }
+          </Styled.Section>
         </Styled.Content>
       </DialogPrimitive.Content>
     </DialogPrimitive.Portal>

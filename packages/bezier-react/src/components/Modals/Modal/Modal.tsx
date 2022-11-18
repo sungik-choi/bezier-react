@@ -10,7 +10,7 @@ export function Modal({
   children,
   show,
   onShow = noop,
-  onHide,
+  onHide = noop,
 }: ModalProps) {
   const onOpenChange = useCallback<NonNullable<DialogPrimitive.DialogProps['onOpenChange']>>((open) => {
     const callback = open ? onShow : onHide

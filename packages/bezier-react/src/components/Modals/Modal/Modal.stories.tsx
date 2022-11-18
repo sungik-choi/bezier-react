@@ -12,6 +12,7 @@ import { TextField } from 'Components/Forms/Inputs/TextField'
 import { Modal } from './Modal'
 import { ModalContent } from './ModalContent'
 import { ModalHeader } from './ModalHeader'
+import { ModalBody } from './ModalBody'
 import { ModalFooter } from './ModalFooter'
 import { ModalTrigger, ModalClose } from './ModalHelpers'
 import {
@@ -24,9 +25,10 @@ import {
 type ModalCompositionProps = ModalProps & ModalContentProps & ModalHeaderProps
 
 function ModalComposition({
-  show: showProp,
+  show: showProp = false,
   showCloseIcon,
   width,
+  height,
   title,
   subTitle,
   description,
@@ -52,6 +54,7 @@ function ModalComposition({
       <ModalContent
         showCloseIcon={showCloseIcon}
         width={width}
+        height={height}
       >
         <ModalHeader
           title={title}
@@ -60,10 +63,12 @@ function ModalComposition({
           titleSize={titleSize}
         />
 
-        <FormControl labelPosition="left">
-          <FormLabel>Name</FormLabel>
-          <TextField />
-        </FormControl>
+        <ModalBody>
+          <FormControl labelPosition="left">
+            <FormLabel>Name</FormLabel>
+            <TextField />
+          </FormControl>
+        </ModalBody>
 
         <ModalFooter
           rightContent={(
@@ -103,6 +108,11 @@ export default {
   },
   argTypes: {
     width: {
+      control: {
+        type: 'text',
+      },
+    },
+    height: {
       control: {
         type: 'text',
       },

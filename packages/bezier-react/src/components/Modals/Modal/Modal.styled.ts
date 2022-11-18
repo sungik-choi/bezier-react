@@ -26,7 +26,7 @@ export const DialogPrimitiveOverlay = styled(DialogPrimitive.Overlay)`
   }
 `
 
-export const Content = styled.section`
+export const Content = styled.div`
   ${({ foundation }) => foundation?.rounding.round20}
   ${({ foundation }) => foundation?.elevation.ev4()}
 
@@ -42,7 +42,6 @@ export const Content = styled.section`
   max-width: 100vw;
   height: var(--height);
   max-height: calc(100vh - 80px);
-  padding: 24px;
   overflow-y: auto;
   color: var(--bg-grey-darkest);
   transform: translate(-50%, -50%);
@@ -60,26 +59,19 @@ export const Content = styled.section`
   }
 `
 
-export const ContentAndActionContainer = styled.div`
-  position: relative;
+export const Section = styled.section`
   display: flex;
-  flex-direction: column;
-  ${gap(16)}
-`
-
-export const ContentContainer = styled.div`
-  box-sizing: border-box;
-  display: flex;
-  flex: 1;
   flex-direction: column;
   width: 100%;
-  word-break: break-word;
-  ${gap(12)}
+  height: 100%;
 `
+
+const MODAL_PADDING = 24
 
 export const Header = styled.header`
   display: flex;
   flex-direction: column;
+  padding: ${MODAL_PADDING}px ${MODAL_PADDING}px 12px ${MODAL_PADDING}px;
   ${gap(12)}
 `
 
@@ -108,8 +100,8 @@ export const CloseIconButton = styled(Button).attrs({
   styleVariant: ButtonStyleVariant.Tertiary,
 })`
   position: absolute;
-  top: ${CLOSE_ICON_BUTTON_MARGIN_X}px;
-  right: ${CLOSE_ICON_BUTTON_MARGIN_Y}px;
+  top: ${MODAL_PADDING + CLOSE_ICON_BUTTON_MARGIN_X}px;
+  right: ${MODAL_PADDING + CLOSE_ICON_BUTTON_MARGIN_Y}px;
 `
 
 export const CloseIconButtonSpacer = styled(Button).attrs({
@@ -122,7 +114,20 @@ export const CloseIconButtonSpacer = styled(Button).attrs({
   visibility: hidden;
 `
 
+export const Body = styled.div`
+  flex: 1;
+  padding: 0 ${MODAL_PADDING}px;
+`
+
 export const Footer = styled.footer`
   display: flex;
-  justify-content: space-between;
+  padding: 16px ${MODAL_PADDING}px ${MODAL_PADDING}px;
+`
+
+export const FooterLeftContent = styled.div`
+  margin-right: auto;
+`
+
+export const FooterRightContent = styled.div`
+  margin-left: auto;
 `
