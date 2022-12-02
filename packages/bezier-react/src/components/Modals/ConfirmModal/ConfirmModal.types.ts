@@ -17,7 +17,7 @@ export interface ConfirmModalContentProps extends
   Omit<ModalContentProps, 'showCloseIcon'> {}
 
 export interface ConfirmModalHeaderProps extends
-  Omit<ModalHeaderProps, 'subtitle' | 'titleSize'> {}
+  Omit<ModalHeaderProps, 'subtitle' | 'titleSize' | 'hidden'> {}
 
 export interface ConfirmModalBodyProps extends
   ModalBodyProps {}
