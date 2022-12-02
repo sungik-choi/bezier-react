@@ -120,6 +120,7 @@ const Wrapper = styled.div<WrapperProps & InterpolationProps>`
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  width: 100%;
   height: ${({ size }) => size}px;
   padding: 0 12px;
   background-color: ${({ foundation, bgColor }) => foundation?.theme?.[bgColor]};
