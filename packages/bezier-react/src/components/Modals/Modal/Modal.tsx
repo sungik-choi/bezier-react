@@ -7,7 +7,7 @@ import { noop } from 'lodash-es'
 import { ModalProps } from './Modal.types'
 
 /**
- * `Modal` is a dialog that appears on top of the page.
+ * `Modal` is a modal dialog that appears on top of the page.
  *
  * `Modal` is a context of the Modal-related components. It doesn't render any DOM node.
  * It controls the visibility of the entire component and provides
@@ -44,6 +44,7 @@ export function Modal({
 
   return (
     <DialogPrimitive.Root
+      modal
       open={show}
       defaultOpen={defaultShow}
       onOpenChange={onOpenChange}
