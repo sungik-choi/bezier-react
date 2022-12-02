@@ -1,5 +1,6 @@
 export * from './BaseModal'
 export * from './ConfirmModal'
+export * as ConfirmModalAlpha from './ConfirmModalAlpha'
 /**
  * @deprecated
  */
