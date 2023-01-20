@@ -10,7 +10,7 @@ import { ModalBodyProps, ModalContentProps, ModalFooterProps, ModalHeaderProps }
 import ModalAnimation from './ModalAnimation.styled'
 
 export const DialogPrimitiveOverlay = styled(DialogPrimitive.Overlay)`
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
