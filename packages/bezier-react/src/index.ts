@@ -48,6 +48,7 @@ export * from 'Components/TagBadge'
 export * from 'Components/Text'
 export * from 'Components/Toast'
 export * from 'Components/Tooltip'
+export * from 'Components/PortalContainer'
 
 /* Hooks for Component */
 export { default as useToast } from 'Components/Toast/useToast'

@@ -17,6 +17,7 @@ import { noop } from 'lodash-es'
 import useEventHandler from 'Hooks/useEventHandler'
 import useMergeRefs from 'Hooks/useMergeRefs'
 import { window, document, getRootElement } from 'Utils/domUtils'
+import { usePortalContainerContext } from 'Components/PortalContainer'
 import OverlayProps, { OverlayPosition, ContainerRectAttr, TargetRectAttr } from './Overlay.types'
 import * as Styled from './Overlay.styled'
 
@@ -62,12 +63,15 @@ function Overlay(
   const overlayRef = useRef<HTMLDivElement>(null)
   const mergedRef = useMergeRefs<HTMLDivElement>(overlayRef, forwardedRef)
 
+  const parentContainer = usePortalContainerContext()
+
   const handleOverlayForceUpdate = useCallback(() => {
     forceUpdate()
   }, [])
 
   const handleContainerRect = useCallback(() => {
-    const containerElement = container || getRootElement() as HTMLElement
+    const givenContainerElement = container ?? parentContainer
+    const containerElement = givenContainerElement ?? getRootElement()
 
     const {
       width: containerWidth,
@@ -81,10 +85,13 @@ function Overlay(
       containerHeight,
       containerTop,
       containerLeft,
-      scrollTop: container ? container.scrollTop : 0,
-      scrollLeft: container ? container.scrollLeft : 0,
+      scrollTop: givenContainerElement ? givenContainerElement.scrollTop : 0,
+      scrollLeft: givenContainerElement ? givenContainerElement.scrollLeft : 0,
     }
-  }, [container])
+  }, [
+    container,
+    parentContainer,
+  ])
 
   useLayoutEffect(function initContainerRect() {
     if (show) {
@@ -276,7 +283,7 @@ function Overlay(
 
   return ReactDOM.createPortal(
     overlay,
-    container || getRootElement() as HTMLElement,
+    container ?? parentContainer ?? getRootElement(),
   )
 }
 

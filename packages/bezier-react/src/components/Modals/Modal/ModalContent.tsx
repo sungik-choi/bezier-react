@@ -4,7 +4,8 @@ import * as DialogPrimitive from '@radix-ui/react-dialog'
 import { isNumber } from 'lodash-es'
 
 /* Internal dependencies */
-import { document } from 'Utils/domUtils'
+import { getRootElement } from 'Utils/domUtils'
+import { usePortalContainerContext } from 'Components/PortalContainer'
 import { ModalClose } from './ModalHelpers'
 import ModalContentContext from './ModalContentContext'
 import { ModalContentProps, ModalContentContextValue } from './Modal.types'
@@ -18,13 +19,16 @@ import * as Styled from './Modal.styled'
 export const ModalContent = forwardRef(function ModalContent({
   children,
   style,
-  container = document.body,
+  container,
   showCloseIcon = false,
   width = 'max-content',
   height = 'fit-content',
   zIndex = 0,
   ...rest
 }: ModalContentProps, forwardedRef: React.Ref<HTMLDivElement>) {
+  const parentContainer = usePortalContainerContext()
+  const containerElement = container ?? parentContainer ?? getRootElement()
+
   const overlayStyle = useMemo((): React.CSSProperties & {
     '--bezier-modal-z-index': ModalContentProps['zIndex']
   } => ({
@@ -49,7 +53,7 @@ export const ModalContent = forwardRef(function ModalContent({
   }), [showCloseIcon])
 
   return (
-    <DialogPrimitive.Portal container={container}>
+    <DialogPrimitive.Portal container={containerElement}>
       <Styled.DialogPrimitiveOverlay style={overlayStyle}>
         <DialogPrimitive.Content asChild>
           <Styled.Content
