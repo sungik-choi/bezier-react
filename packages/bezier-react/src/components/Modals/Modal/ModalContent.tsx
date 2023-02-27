@@ -8,6 +8,7 @@ import {
   isNumber,
 } from 'Utils/typeUtils'
 import { ZIndex } from 'Constants/ZIndex'
+import { useAlphaTopLayerContext } from 'Components/AlphaTopLayer/AlphaTopLayerProvider'
 import { ModalClose } from './ModalHelpers'
 import ModalContentContext from './ModalContentContext'
 import { ModalContentProps, ModalContentContextValue } from './Modal.types'
@@ -28,6 +29,8 @@ export const ModalContent = forwardRef(function ModalContent({
   zIndex = ZIndex.Modal,
   ...rest
 }: ModalContentProps, forwardedRef: React.Ref<HTMLDivElement>) {
+  const { clicked } = useAlphaTopLayerContext()
+
   const overlayStyle = useMemo((): React.CSSProperties & {
     '--bezier-modal-z-index': ModalContentProps['zIndex']
   } => ({
@@ -54,7 +57,15 @@ export const ModalContent = forwardRef(function ModalContent({
   return (
     <DialogPrimitive.Portal container={container}>
       <Styled.DialogPrimitiveOverlay style={overlayStyle}>
-        <DialogPrimitive.Content asChild>
+        <DialogPrimitive.Content
+          asChild
+          // onPointerDownOutside={e => {
+          //   console.log(clicked.current)
+          //   if (clicked.current) {
+          //     e.preventDefault()
+          //   }
+          // }}
+        >
           <Styled.Content
             aria-modal
             ref={forwardedRef}

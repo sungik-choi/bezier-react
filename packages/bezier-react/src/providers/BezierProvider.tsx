@@ -5,6 +5,7 @@ import React from 'react'
 import { Foundation, FoundationProvider, GlobalStyle, GlobalStyleProp, ThemeVars } from 'Foundation'
 import type { ThemeVarsAdditionalType } from 'Foundation'
 import EnableCSSHoudini from 'Worklets/EnableCSSHoudini'
+import AlphaTopLayerProvider from 'Components/AlphaTopLayer/AlphaTopLayerProvider'
 
 interface BezierProviderProps {
   foundation: Foundation & GlobalStyleProp
@@ -20,14 +21,16 @@ function BezierProvider({
   EnableCSSHoudini({ smoothCorners: true })
 
   return (
-    <FoundationProvider foundation={foundation}>
-      <GlobalStyle foundation={foundation} />
-      <ThemeVars
-        foundation={foundation}
-        scope={themeVarsScope}
-      />
-      { children }
-    </FoundationProvider>
+    <AlphaTopLayerProvider>
+      <FoundationProvider foundation={foundation}>
+        <GlobalStyle foundation={foundation} />
+        <ThemeVars
+          foundation={foundation}
+          scope={themeVarsScope}
+        />
+        { children }
+      </FoundationProvider>
+    </AlphaTopLayerProvider>
   )
 }
 

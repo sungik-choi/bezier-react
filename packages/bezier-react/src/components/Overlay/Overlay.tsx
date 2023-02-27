@@ -176,6 +176,7 @@ function Overlay(
       marginY={marginY}
       keepInContainer={keepInContainer}
       onTransitionEnd={handleTransitionEnd}
+      onPointerDown={e => e.stopPropagation()}
     >
       { children }
     </Styled.Overlay>
