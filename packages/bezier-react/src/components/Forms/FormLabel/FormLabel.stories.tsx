@@ -32,4 +32,5 @@ Primary.args = {
   htmlFor: 'test',
   help: 'Lorem ipsum',
   children: 'Label',
+  hidden: false,
 }

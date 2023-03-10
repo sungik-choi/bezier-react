@@ -75,8 +75,14 @@ function FormControl({
     typo: labelPosition === 'left' ? Typography.Size14 : Typography.Size13,
     Wrapper: labelPosition === 'top'
       ? Styled.TopLabelWrapper
-      : (({ children: labelElement }) => (
-        <Styled.LeftLabelWrapper height={leftLabelWrapperHeight}>
+      : (({
+        children: labelElement,
+        ...given
+      }) => (
+        <Styled.LeftLabelWrapper
+          height={leftLabelWrapperHeight}
+          {...given}
+        >
           { labelElement }
         </Styled.LeftLabelWrapper>
       )),

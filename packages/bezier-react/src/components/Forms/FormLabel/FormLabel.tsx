@@ -1,5 +1,6 @@
 /* External dependencies */
 import React, { forwardRef, useMemo } from 'react'
+import { Slot } from '@radix-ui/react-slot'
 
 /* Internal dependencies */
 import { Typography } from 'Foundation'
@@ -8,6 +9,7 @@ import useFormControlContext from 'Components/Forms/useFormControlContext'
 import { Help } from 'Components/Help'
 import { HELP_DISPLAY_NAME } from 'Components/Help/Help'
 import { HStack, StackItem } from 'Components/Stack'
+import { VisuallyHidden } from 'Components/VisuallyHidden'
 import type FormLabelProps from './FormLabel.types'
 import * as Styled from './FormLabel.styled'
 
@@ -18,6 +20,7 @@ function FormLabel({
   help,
   as = 'label',
   bold = true,
+  hidden = true,
   color = 'txt-black-darkest',
   children,
   ...rest
@@ -27,10 +30,12 @@ forwardedRef: React.Ref<HTMLLabelElement>,
   const contextValue = useFormControlContext()
 
   const { Wrapper, typo, ...ownProps } = contextValue?.getLabelProps(rest) ?? {
-    Wrapper: React.Fragment,
+    Wrapper: Slot,
     typo: Typography.Size13,
     ...rest,
   }
+
+  const Hidden = hidden ? VisuallyHidden : React.Fragment
 
   const LabelComponent = useMemo(() => (
     <Styled.Label
@@ -76,20 +81,22 @@ forwardedRef: React.Ref<HTMLLabelElement>,
   if (isEmpty(children)) { return null }
 
   return (
-    <Wrapper>
-      { !HelpComponent
-        ? LabelComponent
-        : (
-          <HStack align="center" spacing={6}>
-            <StackItem shrink weight={1}>
-              { LabelComponent }
-            </StackItem>
-            <StackItem>
-              { HelpComponent }
-            </StackItem>
-          </HStack>
-        ) }
-    </Wrapper>
+    <Hidden>
+      <Wrapper>
+        { !HelpComponent
+          ? LabelComponent
+          : (
+            <HStack align="center" spacing={6}>
+              <StackItem shrink weight={1}>
+                { LabelComponent }
+              </StackItem>
+              <StackItem>
+                { HelpComponent }
+              </StackItem>
+            </HStack>
+          ) }
+      </Wrapper>
+    </Hidden>
   )
 }
 
