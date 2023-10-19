@@ -1,0 +1,312 @@
+{
+  "primary": {
+    "bg": {
+      "normal": {
+        "type": "color",
+        "value": "{bg.blue.normal.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38977:215690"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{bg.blue.light.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38980:215694"
+        }
+      },
+      "lighter": {
+        "type": "color",
+        "value": "{bg.blue.lighter.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38980:215695"
+        }
+      },
+      "lightest": {
+        "type": "color",
+        "value": "{bg.blue.lightest.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38980:215696"
+        }
+      },
+      "dark": {
+        "type": "color",
+        "value": "{bg.blue.dark.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38980:215697"
+        }
+      }
+    },
+    "fg": {
+      "normal": {
+        "type": "color",
+        "value": "{fg.blue.normal.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38980:215700"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{fg.blue.light.value}",
+        "description": "blue, primary, brand color, channel color",
+        "$extensions": {
+          "variableId": "VariableID:38980:215701"
+        }
+      }
+    }
+  },
+  "error": {
+    "bg": {
+      "dark": {
+        "type": "color",
+        "value": "{bg.red.dark.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215711"
+        }
+      },
+      "normal": {
+        "type": "color",
+        "value": "{fg.red.normal.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215712"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{bg.red.light.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215713"
+        }
+      },
+      "lighter": {
+        "type": "color",
+        "value": "{bg.red.lighter.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215714"
+        }
+      },
+      "lightest": {
+        "type": "color",
+        "value": "{bg.red.lightest.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215715"
+        }
+      }
+    },
+    "fg": {
+      "normal": {
+        "type": "color",
+        "value": "{fg.red.normal.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215716"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{fg.red.light.value}",
+        "description": "red, strong alert, critical warning, negative",
+        "$extensions": {
+          "variableId": "VariableID:38980:215717"
+        }
+      }
+    }
+  },
+  "warning": {
+    "bg": {
+      "dark": {
+        "type": "color",
+        "value": "{bg.orange.dark.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215718"
+        }
+      },
+      "normal": {
+        "type": "color",
+        "value": "{bg.orange.normal.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215719"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{bg.orange.light.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215720"
+        }
+      },
+      "lighter": {
+        "type": "color",
+        "value": "{bg.orange.lighter.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215721"
+        }
+      },
+      "lightest": {
+        "type": "color",
+        "value": "{bg.orange.lightest.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215722"
+        }
+      }
+    },
+    "fg": {
+      "normal": {
+        "type": "color",
+        "value": "{fg.orange.normal.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215723"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{fg.orange.light.value}",
+        "description": "orange, soft warning",
+        "$extensions": {
+          "variableId": "VariableID:38980:215724"
+        }
+      }
+    }
+  },
+  "accent": {
+    "bg": {
+      "dark": {
+        "type": "color",
+        "value": "{bg.cobalt.dark.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215725"
+        }
+      },
+      "normal": {
+        "type": "color",
+        "value": "{bg.cobalt.normal.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215726"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{bg.cobalt.light.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215727"
+        }
+      },
+      "lighter": {
+        "type": "color",
+        "value": "{bg.cobalt.lighter.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215728"
+        }
+      },
+      "lightest": {
+        "type": "color",
+        "value": "{bg.cobalt.lightest.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215729"
+        }
+      }
+    },
+    "fg": {
+      "normal": {
+        "type": "color",
+        "value": "{fg.cobalt.normal.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215730"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{fg.cobalt.light.value}",
+        "description": "cobalt, accent, link detecting",
+        "$extensions": {
+          "variableId": "VariableID:38980:215731"
+        }
+      }
+    }
+  },
+  "success": {
+    "bg": {
+      "dark": {
+        "type": "color",
+        "value": "{bg.green.dark.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215732"
+        }
+      },
+      "normal": {
+        "type": "color",
+        "value": "{bg.green.normal.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215733"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{bg.green.light.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215734"
+        }
+      },
+      "lighter": {
+        "type": "color",
+        "value": "{bg.green.lighter.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215735"
+        }
+      },
+      "lightest": {
+        "type": "color",
+        "value": "{bg.green.lightest.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215736"
+        }
+      }
+    },
+    "fg": {
+      "normal": {
+        "type": "color",
+        "value": "{fg.green.normal.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215737"
+        }
+      },
+      "light": {
+        "type": "color",
+        "value": "{fg.green.light.value}",
+        "description": "green, positive, success",
+        "$extensions": {
+          "variableId": "VariableID:38980:215738"
+        }
+      }
+    }
+  }
+}

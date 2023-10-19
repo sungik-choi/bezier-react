@@ -1,0 +1,354 @@
+{
+  "typography": {
+    "11": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "11px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:28ebdfc5a202907fb83b3f2d2db941ebc187c575,"
+      }
+    },
+    "12": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:a28700abf86e37fd11932229340de64722720ad6,"
+      }
+    },
+    "13": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:1f8ecf4f3b9b87ff718b3f0316fd6a60c90ba00d,"
+      }
+    },
+    "14": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "14px",
+        "lineHeight": "18px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:7a314b08d5db60a06eda81a8f33d2067413831de,"
+      }
+    },
+    "15": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "lineHeight": "22px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:833d2ac6194768bf9877a2bdacfbe16da80e2e8e,"
+      }
+    },
+    "16": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:826a481c0ac079258d680f902444be87faed524e,"
+      }
+    },
+    "17": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "17px",
+        "lineHeight": "22px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:0cbc876808709198cbff864ad0d4e2e800b54b0f,"
+      }
+    },
+    "18": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:ec1937f6ed7abe269950338a2367ea8eabaf4e6e,"
+      }
+    },
+    "24": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:da74fa2d0643246160ee864129132e98f0b995e9,"
+      }
+    },
+    "30": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:1a0ec389c991c037ac4d831a83444fdfc52a0208,"
+      }
+    },
+    "11-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "11px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:099626e28a3ee141a79c82f8fbd84fbad3ea3747,"
+      }
+    },
+    "12-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:dd6e4555ef67d49cdca7bb5d27630678cc57e650,"
+      }
+    },
+    "13-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "13px",
+        "lineHeight": "18px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:44ce3f93f950d3994a14f16fa5cbea24c7407a1a,"
+      }
+    },
+    "14-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "14px",
+        "lineHeight": "18px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:edc5ce860f7648a25ddf803d8f8924b441d0859a,"
+      }
+    },
+    "15-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "lineHeight": "22px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:cef6c5c2357a8ef60a21ca0e74d5036f8baf3368,"
+      }
+    },
+    "15 (narrow)": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "15px",
+        "lineHeight": "20px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:ccb76a93c27c754859eb9dd13ebd938cc76f38fc,"
+      }
+    },
+    "16-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:3cc321866fb02795d048dc89d23e1f0753b77ec1,"
+      }
+    },
+    "17-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "17px",
+        "lineHeight": "22px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:ee4f50a7bf4a708efb61ea1eae76b557dec0e2b0,"
+      }
+    },
+    "17-bold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 700,
+        "fontSize": "17px",
+        "lineHeight": "22px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:c6e3de0bbfe021ed00b01d07c8859b00d78ee6d6,"
+      }
+    },
+    "18-semibold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 400,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:9eb9db675b3315248c136cb4ba9a47cc77f044f1,"
+      }
+    },
+    "18-bold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 700,
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:000002d064543f31bd3a159c8d7eda15aa68946e,"
+      }
+    },
+    "22-bold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 700,
+        "fontSize": "22px",
+        "lineHeight": "28px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:26e80f7a78605d2c0f1d4559188c1d639ca15fd7,"
+      }
+    },
+    "24-bold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 700,
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:883b5a6d745330df5f730bca6b76fa8c698e664a,"
+      }
+    },
+    "30-bold": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 700,
+        "fontSize": "30px",
+        "lineHeight": "36px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:4b18ee39a14d569bf0c2f08bc505f66ccbc6ab94,"
+      }
+    },
+    "h2": {
+      "type": "typography",
+      "value": {
+        "fontFamily": "Pretendard",
+        "fontWeight": 700,
+        "fontSize": "36px",
+        "lineHeight": "44px",
+        "letterSpacing": "0px"
+      },
+      "description": "",
+      "$extensions": {
+        "styleId": "S:fee6d7131f2fa1b214a38808a97a8ce5710cd97f,"
+      }
+    }
+  }
+}

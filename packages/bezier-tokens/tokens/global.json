@@ -1,0 +1,1568 @@
+{
+  "color": {
+    "blue": {
+      "300": {
+        "type": "color",
+        "value": "#6687ff",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228901"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#5e56f0",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228902"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#4e40c9",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228903"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#5e56f04d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228904"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#5e56f033",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228905"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#5e56f01a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228906"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#6687ff66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228907"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#6687ff4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228908"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#6687ff33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228909"
+        }
+      }
+    },
+    "cobalt": {
+      "300": {
+        "type": "color",
+        "value": "#47c8ff",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228910"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#329be7",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228911"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#327ab8",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228912"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#329be74d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228913"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#329be733",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228914"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#329be71a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228915"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#47c8ff66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228916"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#47c8ff4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228917"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#47c8ff33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228918"
+        }
+      }
+    },
+    "green": {
+      "300": {
+        "type": "color",
+        "value": "#3acf5a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228919"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#31a552",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228920"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#41904f",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228921"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#31a5524d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228922"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#31a55233",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228923"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#31a5521a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228924"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#3acf5a66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228925"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#3acf5a4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228926"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#3acf5a33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228927"
+        }
+      }
+    },
+    "red": {
+      "300": {
+        "type": "color",
+        "value": "#ff5c5c",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228928"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#e94e58",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228929"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#ac3e46",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228930"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#e94e584d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228931"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#e94e5833",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228932"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#e94e581a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228933"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#ff5c5c66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228934"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#ff5c5c4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228935"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#ff5c5c33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228936"
+        }
+      }
+    },
+    "black": {
+      "3": {
+        "type": "color",
+        "value": "#00000008",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228937"
+        }
+      },
+      "5": {
+        "type": "color",
+        "value": "#0000000d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228938"
+        }
+      },
+      "8": {
+        "type": "color",
+        "value": "#00000014",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228939"
+        }
+      },
+      "15": {
+        "type": "color",
+        "value": "#00000026",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228940"
+        }
+      },
+      "20": {
+        "type": "color",
+        "value": "#00000033",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228941"
+        }
+      },
+      "22": {
+        "type": "color",
+        "value": "#00000038",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228942"
+        }
+      },
+      "30": {
+        "type": "color",
+        "value": "#0000004d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228943"
+        }
+      },
+      "40": {
+        "type": "color",
+        "value": "#00000066",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228944"
+        }
+      },
+      "60": {
+        "type": "color",
+        "value": "#00000099",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228945"
+        }
+      },
+      "85": {
+        "type": "color",
+        "value": "#000000d9",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228946"
+        }
+      },
+      "100": {
+        "type": "color",
+        "value": "#000000",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228947"
+        }
+      }
+    },
+    "white": {
+      "0": {
+        "type": "color",
+        "value": "#ffffff00",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228948"
+        }
+      },
+      "5": {
+        "type": "color",
+        "value": "#ffffff0d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228949"
+        }
+      },
+      "8": {
+        "type": "color",
+        "value": "#ffffff14",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228950"
+        }
+      },
+      "12": {
+        "type": "color",
+        "value": "#ffffff1f",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228951"
+        }
+      },
+      "20": {
+        "type": "color",
+        "value": "#ffffff33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228952"
+        }
+      },
+      "40": {
+        "type": "color",
+        "value": "#ffffff66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228953"
+        }
+      },
+      "60": {
+        "type": "color",
+        "value": "#ffffff99",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228954"
+        }
+      },
+      "80": {
+        "type": "color",
+        "value": "#ffffffcc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228955"
+        }
+      },
+      "90": {
+        "type": "color",
+        "value": "#ffffffe6",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228956"
+        }
+      },
+      "100": {
+        "type": "color",
+        "value": "#ffffff",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228957"
+        }
+      }
+    },
+    "orange": {
+      "300": {
+        "type": "color",
+        "value": "#ffab5c",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228958"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#f4800b",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228959"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#c57417",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228960"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#f4800b4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228962"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#f4800b33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228963"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#f4800b1a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228964"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#ffab5c66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228965"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#ffab5c4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228966"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#ffab5c33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228967"
+        }
+      }
+    },
+    "yellow": {
+      "300": {
+        "type": "color",
+        "value": "#fdd353",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228968"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#edbc40",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228969"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#c39e37",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228970"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#edbc404d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228971"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#edbc4033",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228972"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#edbc401a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228973"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#fdd35366",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228974"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#fdd3534d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228975"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#fdd35333",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228976"
+        }
+      }
+    },
+    "pink": {
+      "300": {
+        "type": "color",
+        "value": "#ec6fd3",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228977"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#cb48ad",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228978"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#a32e92",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228979"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#cb48ad4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228980"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#cb48ad33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228981"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#cb48ad1a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228982"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#ec6fd366",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228983"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#ec6fd34d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228984"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#ec6fd333",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228985"
+        }
+      }
+    },
+    "purple": {
+      "300": {
+        "type": "color",
+        "value": "#b570ff",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228986"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#915ce0",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228987"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#6b23b3",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228988"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#915ce04d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228989"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#915ce033",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228990"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#915ce01a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228991"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#b570ff66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228992"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#b570ff4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228993"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#b570ff33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228994"
+        }
+      }
+    },
+    "navy": {
+      "300": {
+        "type": "color",
+        "value": "#647cc9",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228995"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#3a4f8d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228996"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#333d5b",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228997"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#3a4f8d4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228998"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#3a4f8d33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:228999"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#3a4f8d1a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229000"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#647cc966",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229001"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#647cc94d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229002"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#647cc933",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229003"
+        }
+      }
+    },
+    "teal": {
+      "300": {
+        "type": "color",
+        "value": "#3cddcd",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229004"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#0fb3a3",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229005"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#449c8a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229006"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#0fb3a34d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229007"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#0fb3a333",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229008"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#0fb3a31a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229009"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#3cddcd66",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229010"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#3cddcd4d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229011"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#3cddcd33",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229012"
+        }
+      }
+    },
+    "olive": {
+      "300": {
+        "type": "color",
+        "value": "#cad548",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229013"
+        }
+      },
+      "400": {
+        "type": "color",
+        "value": "#a0a540",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229014"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#818628",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229015"
+        }
+      },
+      "400-30": {
+        "type": "color",
+        "value": "#a0a5404d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229016"
+        }
+      },
+      "400-20": {
+        "type": "color",
+        "value": "#a0a54033",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229017"
+        }
+      },
+      "400-10": {
+        "type": "color",
+        "value": "#a0a5401a",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229018"
+        }
+      },
+      "300-40": {
+        "type": "color",
+        "value": "#cad54866",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229019"
+        }
+      },
+      "300-30": {
+        "type": "color",
+        "value": "#cad5484d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229020"
+        }
+      },
+      "300-20": {
+        "type": "color",
+        "value": "#cad54833",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229021"
+        }
+      }
+    },
+    "grey": {
+      "50": {
+        "type": "color",
+        "value": "#fcfcfc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229022"
+        }
+      },
+      "100": {
+        "type": "color",
+        "value": "#f7f7f8",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229023"
+        }
+      },
+      "200": {
+        "type": "color",
+        "value": "#efeff0",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229024"
+        }
+      },
+      "500": {
+        "type": "color",
+        "value": "#a7a7aa",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229025"
+        }
+      },
+      "700": {
+        "type": "color",
+        "value": "#464748",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229026"
+        }
+      },
+      "800": {
+        "type": "color",
+        "value": "#313234",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229027"
+        }
+      },
+      "850": {
+        "type": "color",
+        "value": "#2a2b2d",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229028"
+        }
+      },
+      "900": {
+        "type": "color",
+        "value": "#242428",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229029"
+        }
+      }
+    },
+    "grey-alpha": {
+      "900_90": {
+        "type": "color",
+        "value": "#242428e6",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229030"
+        }
+      },
+      "850_80": {
+        "type": "color",
+        "value": "#2a2b2dcc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229031"
+        }
+      },
+      "800_80": {
+        "type": "color",
+        "value": "#313234cc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229032"
+        }
+      },
+      "700_80": {
+        "type": "color",
+        "value": "#464748cc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229033"
+        }
+      },
+      "200_80": {
+        "type": "color",
+        "value": "#efeff0cc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229034"
+        }
+      },
+      "100_80": {
+        "type": "color",
+        "value": "#f7f7f8cc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229035"
+        }
+      },
+      "50_80": {
+        "type": "color",
+        "value": "#fcfcfccc",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229036"
+        }
+      },
+      "100_90": {
+        "type": "color",
+        "value": "#f7f7f8e6",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36389:228791"
+        }
+      },
+      "800_90": {
+        "type": "color",
+        "value": "#313234e6",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36508:228933"
+        }
+      }
+    }
+  },
+  "sizing": {
+    "6": {
+      "type": "dimension",
+      "value": "6px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229095"
+      }
+    },
+    "10": {
+      "type": "dimension",
+      "value": "10px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229096"
+      }
+    },
+    "12": {
+      "type": "dimension",
+      "value": "12px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229097"
+      }
+    },
+    "16": {
+      "type": "dimension",
+      "value": "16px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229098"
+      }
+    },
+    "20": {
+      "type": "dimension",
+      "value": "20px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229099"
+      }
+    },
+    "22": {
+      "type": "dimension",
+      "value": "22px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229100"
+      }
+    },
+    "24": {
+      "type": "dimension",
+      "value": "24px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229101"
+      }
+    },
+    "28": {
+      "type": "dimension",
+      "value": "28px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229102"
+      }
+    },
+    "30": {
+      "type": "dimension",
+      "value": "30px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229103"
+      }
+    },
+    "36": {
+      "type": "dimension",
+      "value": "36px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229104"
+      }
+    },
+    "42": {
+      "type": "dimension",
+      "value": "42px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229105"
+      }
+    },
+    "44": {
+      "type": "dimension",
+      "value": "44px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229106"
+      }
+    },
+    "48": {
+      "type": "dimension",
+      "value": "48px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229107"
+      }
+    },
+    "54": {
+      "type": "dimension",
+      "value": "54px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229108"
+      }
+    },
+    "60": {
+      "type": "dimension",
+      "value": "60px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229109"
+      }
+    },
+    "72": {
+      "type": "dimension",
+      "value": "72px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229110"
+      }
+    },
+    "90": {
+      "type": "dimension",
+      "value": "90px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229111"
+      }
+    },
+    "120": {
+      "type": "dimension",
+      "value": "120px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229112"
+      }
+    },
+    "160": {
+      "type": "dimension",
+      "value": "160px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229113"
+      }
+    },
+    "200": {
+      "type": "dimension",
+      "value": "200px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229114"
+      }
+    },
+    "240": {
+      "type": "dimension",
+      "value": "240px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229115"
+      }
+    },
+    "320": {
+      "type": "dimension",
+      "value": "320px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229116"
+      }
+    },
+    "420": {
+      "type": "dimension",
+      "value": "420px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229117"
+      }
+    },
+    "540": {
+      "type": "dimension",
+      "value": "540px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229118"
+      }
+    },
+    "640": {
+      "type": "dimension",
+      "value": "640px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229119"
+      }
+    },
+    "720": {
+      "type": "dimension",
+      "value": "720px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229120"
+      }
+    },
+    "800": {
+      "type": "dimension",
+      "value": "800px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229121"
+      }
+    },
+    "900": {
+      "type": "dimension",
+      "value": "900px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229122"
+      }
+    },
+    "source": {
+      "10": {
+        "type": "dimension",
+        "value": "{sizing.10.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229056"
+        }
+      },
+      "12": {
+        "type": "dimension",
+        "value": "{sizing.12.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229057"
+        }
+      },
+      "16": {
+        "type": "dimension",
+        "value": "{sizing.16.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229058"
+        }
+      },
+      "20": {
+        "type": "dimension",
+        "value": "{sizing.20.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229059"
+        }
+      },
+      "24": {
+        "type": "dimension",
+        "value": "{sizing.24.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229060"
+        }
+      },
+      "30": {
+        "type": "dimension",
+        "value": "{sizing.30.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229061"
+        }
+      },
+      "36": {
+        "type": "dimension",
+        "value": "{sizing.36.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229062"
+        }
+      },
+      "42": {
+        "type": "dimension",
+        "value": "{sizing.42.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229063"
+        }
+      },
+      "48": {
+        "type": "dimension",
+        "value": "{sizing.48.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229064"
+        }
+      },
+      "72": {
+        "type": "dimension",
+        "value": "{sizing.72.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229065"
+        }
+      },
+      "90": {
+        "type": "dimension",
+        "value": "{sizing.90.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229066"
+        }
+      },
+      "120": {
+        "type": "dimension",
+        "value": "{sizing.120.value}",
+        "description": "",
+        "$extensions": {
+          "variableId": "VariableID:36241:229067"
+        }
+      }
+    }
+  },
+  "radius": {
+    "2": {
+      "type": "dimension",
+      "value": "2px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229069"
+      }
+    },
+    "3": {
+      "type": "dimension",
+      "value": "3px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229070"
+      }
+    },
+    "4": {
+      "type": "dimension",
+      "value": "4px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229071"
+      }
+    },
+    "6": {
+      "type": "dimension",
+      "value": "6px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229072"
+      }
+    },
+    "8": {
+      "type": "dimension",
+      "value": "8px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229073"
+      }
+    },
+    "10": {
+      "type": "dimension",
+      "value": "10px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229074"
+      }
+    },
+    "12": {
+      "type": "dimension",
+      "value": "12px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229075"
+      }
+    },
+    "14": {
+      "type": "dimension",
+      "value": "14px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229130"
+      }
+    },
+    "16": {
+      "type": "dimension",
+      "value": "16px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229076"
+      }
+    },
+    "20": {
+      "type": "dimension",
+      "value": "20px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229077"
+      }
+    },
+    "32": {
+      "type": "dimension",
+      "value": "32px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229078"
+      }
+    },
+    "44": {
+      "type": "dimension",
+      "value": "44px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229079"
+      }
+    },
+    "42-p": {
+      "type": "dimension",
+      "value": "42px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229080"
+      }
+    },
+    "100-p": {
+      "type": "dimension",
+      "value": "100px",
+      "description": "",
+      "$extensions": {
+        "variableId": "VariableID:36241:229081"
+      }
+    }
+  }
+}
