@@ -4,6 +4,7 @@ import {
   type BezierComponentProps,
   type LayoutProps,
   type MarginProps,
+  type DisplayProps,
 } from '~/src/types/ComponentProps'
 import { TokenPrefix } from '~/src/types/Token'
 
@@ -11,6 +12,7 @@ import { TokenPrefix } from '~/src/types/Token'
 /* eslint-disable no-restricted-imports */
 import layoutStyles from '../styles/components/layout.module.scss'
 import marginStyles from '../styles/components/margin.module.scss'
+import displayStyles from '../styles/components/display.module.scss'
 /* eslint-enable no-restricted-imports */
 
 import {
@@ -239,3 +241,7 @@ export const getLayoutStyle = ({
     ),
   }
 )
+
+export const getDisplayStyle = (: DisplayProps) {
+
+}

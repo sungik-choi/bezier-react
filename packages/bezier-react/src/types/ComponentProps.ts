@@ -205,3 +205,7 @@ export interface LayoutProps {
   overflowX?: Overflow
   overflowY?: Overflow
 }
+
+export interface DisplayProps<Display extends React.CSSProperties['display']> {
+  display?: Display
+}
