@@ -32,7 +32,7 @@ interface IconOwnProps {
    * <Icon source={HeartFilledIcon} {...} />
    * ```
    */
-  source: React.ElementType<React.SVGProps<SVGSVGElement>>
+  source: React.ElementType<React.SVGProps<SVGSVGElement>> | React.ForwardRefExoticComponent<React.PropsWithoutRef<React.SVGProps<SVGSVGElement>> & React.RefAttributes<SVGSVGElement>>
 }
 
 export interface IconProps extends
