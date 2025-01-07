@@ -28,6 +28,7 @@ import interpolationToCssVariableTypography from './transforms/v2-interpolation-
 import interpolationToCssVariableZIndex from './transforms/v2-interpolation-to-css-variable/zIndex.js'
 import removeAlphaFromAlphaComponents from './transforms/v2-remove-alpha-from-alpha-components/transform.js'
 import textComponentInterface from './transforms/v2-text-component-interface/transform.js'
+import v4ReplaceLegacyColor from './transforms/v4-replace-legacy-color/transform.js'
 
 enum Step {
   SelectTransformer,
@@ -39,9 +40,7 @@ enum Step {
 enum Option {
   IconsToBezierIcons = 'icons-to-bezier-icons',
   IconNameToBezierIcon = 'icon-name-to-bezier-icon',
-
   V2EnumMemberToStringLiteral = 'v2-enum-member-to-string-literal',
-
   V2FoundationToCssVariable = 'v2-foundation-to-css-variable',
   V2FoundationToCssVariableTheme = 'v2-foundation-to-css-variable-theme',
   V2FoundationToCssVariableBorder = 'v2-foundation-to-css-variable-border',
@@ -49,16 +48,16 @@ enum Option {
   V2FoundationToCssVariableRounding = 'v2-foundation-to-css-variable-rounding',
   V2FoundationToCssVariableTransition = 'v2-foundation-to-css-variable-transition',
   V2FoundationToCssVariableSpacing = 'v2-foundation-to-css-variable-spacing',
-
   V2InterpolationToCssVariable = 'v2-interpolation-to-css-variable',
   V2InterpolationToCssVariableInput = 'v2-interpolation-to-css-variable-input',
   V2InterpolationToCssVariableTypography = 'v2-interpolation-to-css-variable-typography',
   V2InterpolationToCssVariableZIndex = 'v2-interpolation-to-css-variable-z-index',
   V2InterpolationToCssVariableRounding = 'v2-interpolation-to-css-variable-rounding',
-
   V2RemoveAlphaFromAlphaComponents = 'v2-remove-alpha-from-alpha-components',
   V2TextComponentInterface = 'v2-text-component-interface',
   V2ImportFromBezierToStyledComponents = 'v2-import-from-bezier-to-styled-components',
+  V4ReplaceLegacyColor = 'v4-replace-legacy-color',
+
   Exit = 'Exit',
 }
 
@@ -67,9 +66,7 @@ type TransformName = Exclude<Option, Option.Exit>
 const transformMap = {
   [Option.IconsToBezierIcons]: iconsToBezierIcons,
   [Option.IconNameToBezierIcon]: iconNameToBezierIcon,
-
   [Option.V2EnumMemberToStringLiteral]: enumMemberToStringLiteral,
-
   [Option.V2FoundationToCssVariableTheme]: foundationToCssVariableTheme,
   [Option.V2FoundationToCssVariableBorder]: foundationToCssVariableBorder,
   [Option.V2FoundationToCssVariableElevation]: foundationToCssVariableElevation,
@@ -78,7 +75,6 @@ const transformMap = {
     foundationToCssVariableTransition,
   [Option.V2FoundationToCssVariableSpacing]: foundationToCssVariableSpacing,
   [Option.V2FoundationToCssVariable]: foundationToCssVariable,
-
   [Option.V2InterpolationToCssVariable]: interpolationToCssVariable,
   [Option.V2InterpolationToCssVariableInput]: interpolationToCssVariableInput,
   [Option.V2InterpolationToCssVariableTypography]:
@@ -86,11 +82,11 @@ const transformMap = {
   [Option.V2InterpolationToCssVariableRounding]:
     interpolationToCssVariableRounding,
   [Option.V2InterpolationToCssVariableZIndex]: interpolationToCssVariableZIndex,
-
   [Option.V2ImportFromBezierToStyledComponents]:
     importFromBezierToStyledComponents,
   [Option.V2RemoveAlphaFromAlphaComponents]: removeAlphaFromAlphaComponents,
   [Option.V2TextComponentInterface]: textComponentInterface,
+  [Option.V4ReplaceLegacyColor]: v4ReplaceLegacyColor,
 }
 
 const options = (Object.keys(transformMap) as Option[])
