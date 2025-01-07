@@ -2173,7 +2173,7 @@ __metadata:
     eslint-config-bezier: "workspace:*"
     ink: "npm:^5.1.0"
     meow: "npm:^13.2.0"
-    react: "npm:^19.0.0"
+    react: "npm:^18.3.1"
     ts-morph: "npm:^24.0.0"
     tsconfig: "workspace:*"
   bin:
@@ -16932,7 +16932,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
+"react@npm:^16.8.0 || ^17.0.0 || ^18.0.0, react@npm:^18.3.1":
   version: 18.3.1
   resolution: "react@npm:18.3.1"
   dependencies:
